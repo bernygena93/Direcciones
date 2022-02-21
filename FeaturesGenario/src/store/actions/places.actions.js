@@ -9,7 +9,7 @@ export const addPlace = (title, image, location) => {
   return async dispatch => {
     try {
       const response = await fetch(
-        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${location.latitude},${location.longitude}&key=AIzaSyDuWEO5ZTit0Zo498096LBA3Sy41FZkuDI`,
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${location.latitude},${location.longitude}&key=`,
       );
       const resData = await response.json();
       const address = resData.results[0].formatted_address;
